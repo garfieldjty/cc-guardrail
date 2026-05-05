@@ -1,0 +1,39 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.claude/
+
+# Large result artefacts — keep only summary/comparison, not raw LLM outputs
+results/*/attack_results.json
+results/*/baseline.json
+results/*/defended.json
+results/*/v1_defended.json
+results/*/v1_fp_check.json
+results/*/lg_defended.json
+results/*/lg_fp_check.json
+results/*/fp_check.json
+results/*/run.log
+results_bk/
+
+# IDE
+.vscode/
+PLAN.md
+project_description.md
+
+# OS
+.DS_Store
+Thumbs.db
